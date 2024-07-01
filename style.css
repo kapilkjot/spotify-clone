@@ -285,6 +285,8 @@ color:#ff4d4d;
   display: flex;
 
  align-items: center;
+ position: fixed;
+ bottom: 0;
 }
 .player{
   
@@ -342,17 +344,44 @@ margin-top: -6px;
   background-color: #000;
   height: 100%;
   align-items: center;
-  display: flex;
+ display: flex;
   justify-content: center;
    align-items: center;
 }
 .control-container{
- 
+  width: 70%;
   margin-right: 0.8rem;
   opacity: 0.9;
   height: 1.5rem;
 }
- .big{
+.volume{
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 16px;
 
-filter:white ;
-} 
+}
+.volume::-webkit-slider-runnable-track{
+  background-color: #fff;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+.volume::-webkit-slider-thumb{
+appearance: none;
+height: 1rem;
+width: 1rem;
+border-radius: 50%;
+background-color: green;
+margin-top: -5px;
+}
+.big{
+  opacity: 0.9;
+  
+}
+.big:hover{
+  cursor: pointer;
+  opacity: 2;
+  
+}
+  
+ 
